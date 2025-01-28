@@ -1,0 +1,283 @@
+/* General Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white; /* Peachy background */
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header Styling */
+h1 {
+    background-color: #8174A0; /* Deep Purple */
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin: 0;
+    border-radius: 10px 10px 0 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-transform: uppercase;
+}
+
+/* Form Styling */
+form {
+    background-color: #EFB6C8; /* Soft Pink */
+    padding: 25px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 30px auto;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    border: 2px solid #A888B5; /* Light Purple Border */
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+}
+
+select, button, input[type="text"], input[type="password"] {
+    width: 93%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #A888B5; /* Light Purple */
+    border-radius: 5px;
+    font-size: 16px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s ease-in-out;
+}
+
+select:focus, button:focus, input:focus {
+    border-color: #8174A0; /* Deep Purple Focus */
+    outline: none;
+    box-shadow: 0 0 5px rgba(129, 116, 160, 0.5);
+}
+
+button {
+    background-color: #A888B5; /* Light Purple */
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8174A0; /* Deep Purple Hover */
+    color: #fff;
+}
+
+/* Suggestions List */
+h2 {
+    text-align: center;
+    color: #8174A0; /* Deep Purple */
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #FFD2A0; /* Peachy background for list items */
+    color: #333;
+    margin: 10px auto;
+    padding: 12px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: bold;
+    max-width: 400px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Error Message */
+.error-message {
+    color: #EFB6C8; /* Soft Pink */
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    form {
+        padding: 15px;
+    }
+
+    select, button, input {
+        font-size: 14px;
+    }
+
+    button {
+        padding: 8px;
+    }
+
+    h1, h2 {
+        font-size: 18px;
+    }
+}
+
+/* Auth Container */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    background-color: #EFB6C8; /* Soft Pink */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid #A888B5;
+    text-align: center;
+}
+
+.auth-container input {
+    margin-bottom: 15px;
+}
+
+.auth-container button {
+    margin: 0 5px;
+}
+
+/* Styling for the Welcome Header */
+.welcome-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 20px;
+    background-color: #8174A0; /* Deep Purple */
+    color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Center-align the heading */
+.welcome-header h1 {
+    margin: 0;
+    flex: 1; /* Takes up remaining space to allow Logout button alignment */
+    text-align: center;
+}
+
+/* Styling for Logout Button */
+.logout-button {
+    position: absolute;
+    top: 50%; /* Vertically center relative to the header */
+    right: 25px; /* Place in the top-right corner */
+    transform: translateY(-50%); /* Ensure vertical centering */
+    background-color: #A888B5; /* Light Purple */
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for Logout Button */
+.logout-button:hover {
+    background-color: #8174A0; /* Deep Purple Hover */
+    color: #fff;
+}
+
+/* Prevent Logout button from stretching */
+.logout-button {
+    width: auto; /* Ensures button doesn't stretch */
+    min-width: 80px;
+    text-align: center;
+}
+
+/* Home Page */
+.home-container {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #F8FAFC; /* Light Background */
+    color: #333;
+}
+
+.home-title {
+    font-size: 36px;
+    color: #8174A0; /* Purple */
+    margin-bottom: 20px;
+}
+
+.home-image {
+    width: 60%;
+    max-width: 400px;
+    margin: 20px auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.home-quote {
+    font-size: 20px;
+    font-style: italic;
+    color: #A888B5; /* Light Purple */
+    margin: 20px 0;
+}
+
+.login-register-button {
+    background-color: #8174A0; /* Purple */
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.login-register-button:hover {
+    background-color: #FFD2A0; /* Light Peach */
+    color: #333;
+}
+
+/* Auth Container */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Styling for ContactUs Button */
+.ContactUs-button {
+    position: absolute;
+    top: 100%; /* Vertically center relative to the header */
+    right: 40px; /* Place in the top-right corner */
+    transform: translateY(-50%); /* Ensure vertical centering */
+    background-color: #A888B5; /* Light Purple */
+    color: white;
+    font-weight: bold;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hover effect for ContactUs Button */
+.ContactUs-button:hover {
+    background-color: #8174A0; /* Deep Purple Hover */
+    color: #fff;
+}
+
+/* Prevent ContactUs button from stretching */
+.ContactUs-button {
+    width: auto; /* Ensures button doesn't stretch */
+    min-width: 80px;
+    text-align: center;
+}
+
+  
