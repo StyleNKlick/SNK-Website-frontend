@@ -33,7 +33,7 @@ const App = () => {
         setError('');
         try {
             setLoading(true);
-            const response = await fetch(`http://localhost:5000/api/${endpoint}`, {
+            const response = await fetch(`https://your-render-app.onrender.com/api/${endpoint}`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(authFormData),
@@ -96,7 +96,7 @@ const App = () => {
 
         try {
             setLoading(true);
-            const response = await fetch('http://localhost:5000/api/suggestions', {
+            const response = await fetch('https://your-render-app.onrender.com/api/suggestions', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
